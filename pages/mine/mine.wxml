@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="mine">
+  <view class="header">
+    <view class="person-info">
+      <view class="userinfo-avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="name">
+        
+        <text wx:if="{{name}}">{{name}}</text>
+        <open-data wx:else type="userNickName"></open-data>
+      </view>
+    </view>
+  </view>
+  <view class="m-t-10">
+    <van-cell-group>
+      <van-cell title="基本信息" isLink bind:click="goTo" data-url="/pages/basic/basic" />
+      <van-cell title="历史答题" isLink bind:click="goTo" data-url="/pages/examType/examType" />
+    </van-cell-group>
+  </view>
+</view>
+
+<!-- <view class="container">
+  <view class="userinfo">
+
+      <view class="userinfo-avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">hello</text>
+  </view>
+</view> -->

@@ -1,0 +1,18 @@
+<!--pages/answer/answer.wxml-->
+<view class="answer">
+  <view class="header">
+    <view class="h2">本次考试得分：<text class="score">{{score}}</text></view>
+    
+  </view>
+  <view class="content">
+    <view class="content-h2">
+      答题情况
+    </view>
+    <view wx:if="{{useTime}}" style="padding:10px;text-align:left;color:#666;font-size:13px;">用时：{{useTime}}</view>
+    <view>
+      <text wx:for="{{answerList}}" round wx:for-index="index" wx:key="index" wx:for-item="answer"
+        class="question-circle {{ answer.score === 0 ? 'circle-danger': ''}}" bindtap="goToQuestion"
+        data-index="{{index}}">{{index+1}}</text>
+    </view>
+  </view>
+</view>

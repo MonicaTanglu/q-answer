@@ -1,0 +1,53 @@
+<!--pages/question/question.wxml-->
+<view class="question">
+  <wxs module="common" src="../../config/common.wxs"></wxs>
+  <view class="header-action">
+    <view>
+      <!-- <text class="time">{{timeObj.minute}}</text>分钟<text class="time">{{timeObj.second}}</text>秒 -->
+    </view>
+    <text>{{currentIndex+1}}/{{questionList.length}}</text>
+    <view>
+      <!-- <button plain size="mini" class="btn-primary-ghost" bindtap="save">保存</button>
+      <button plain size="mini" class="btn-primary m-l-10" bindtap="submit">交卷</button> -->
+    </view>
+  </view>
+  <view class="content">
+    <view class="h2">
+      {{questionList[currentIndex].xxfl === "1" ? '单选题': '判断题'}}
+    </view>
+    <view class="detail">
+      <view class="question-item">
+        {{questionList[currentIndex].sttg}}
+      </view>
+      <view class="question-option">
+        <view wx:if="{{questionList[currentIndex].xxa}}"
+          class="option-item {{common.highLight('A',questionList[currentIndex])}}">A.
+          {{questionList[currentIndex].xxa}}</view>
+        <view wx:if="{{questionList[currentIndex].xxb}}"
+          class="option-item {{common.highLight('B',questionList[currentIndex])}}">B.
+          {{questionList[currentIndex].xxb}}</view>
+        <view wx:if="{{questionList[currentIndex].xxc}}"
+          class="option-item {{common.highLight('C',questionList[currentIndex])}}">C.
+          {{questionList[currentIndex].xxc}}</view>
+        <view wx:if="{{questionList[currentIndex].xxd}}"
+          class="option-item {{common.highLight('D',questionList[currentIndex])}}">C.
+          {{questionList[currentIndex].xxd}}</view>
+      </view>
+      <view>正确答案：{{questionList[currentIndex].da}} 　您的回答：{{questionList[currentIndex].answer}}</view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <button plain size="mini" class="btn-primary-ghost" bindtap="pre" disabled="{{currentIndex === 0 ? true: false}}">
+      <van-icon name="arrow-left" class="arrow" />上一题</button>
+    <van-icon name="records" size="28px" bindtap="showRecord" />
+    <button size="mini" class="btn-primary" bindtap="next"
+      disabled="{{currentIndex+1 === questionList.length ? true: false}}">下一题
+      <van-icon name="arrow" class="arrow" /></button>
+  </view>
+</view>
+<van-popup show="{{ popShow }}" position="bottom" custom-style="height: 40%;" bind:close="closePop">
+  <text wx:for="{{questionList}}" round wx:for-index="index" wx:key="index" wx:for-item="question"
+    class="question-circle {{common.judgeResult(questionList[index])}}" bindtap="goToQuestion" data-index="{{index}}">{{index+1}}</text>
+</van-popup>
+

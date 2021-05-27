@@ -1,0 +1,134 @@
+/* pages/record/record.wxss */
+/* pages/question/question.wxss */
+.question {
+  background: #F6F6F6;
+  height: 100vh;
+  width: 100%;
+}
+
+.question .header-action {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 54px;
+  padding: 0 16px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.header-action .time {
+  color: #0492CE;
+  font-size: 16px;
+  margin: 0 10rpx;
+}
+
+.question .content {
+  margin: 20rpx 30rpx;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  background: #fff;
+}
+
+.question .h2 {
+  height: 36px;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-bottom: 1px solid #f0f0f0;
+  border-left: 3px solid #0492CE;
+  font-weight: bold;
+}
+
+.question .content .detail {
+  padding: 30rpx 16px;
+  color: #333;
+}
+
+.question .footer {
+  position: fixed;
+  bottom: 0px;
+  height: 54px;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+  z-index: 10;
+}
+
+.question-option .option-item {
+  border: 1px solid #F6F6F6;
+  padding: 10px 16px;
+  border-radius: 4px;
+  margin: 10px 0;
+  /* background: rgba(4,146,206,.1); */
+  background: rgba(4, 146, 206, .05);
+}
+
+.question-option .option-item:first-child {
+  margin-top: 30px;
+}
+
+.question-option .active {
+  background: rgba(4, 146, 206, .7);
+  color: #fff;
+}
+
+.question-option .error-result {
+  background: #FE5308;
+  color: #fff;
+}
+
+.circle-active {
+  background: rgba(4, 146, 206, .7);
+  color: #fff;
+}
+
+.circle-error-result {
+  background: #FE5308;
+  color: #fff;
+}
+
+.arrow {
+  position: relative;
+  top: 2px;
+}
+
+.question-option .option-item:last-child {
+  margin-bottom: 30px;
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.question-circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #f6f6f6;
+  margin: 8px;
+  border-radius: 50%;
+}
+
+.circle-active {
+  background: rgba(4, 146, 206, .7);
+  color: #fff;
+  border: 1px solid rgba(4, 146, 206, .7);
+}

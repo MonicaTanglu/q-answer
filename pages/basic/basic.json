@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "个人基本信息",
+  "navigationBarBackgroundColor": "#0492CE",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "答题类型",
+  "navigationBarBackgroundColor": "#0492CE",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  }
+}

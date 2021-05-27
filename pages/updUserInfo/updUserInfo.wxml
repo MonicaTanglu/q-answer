@@ -1,0 +1,14 @@
+<!--pages/basic/basic.wxml-->
+<view>
+  <van-cell-group>
+    <van-field value="{{userInfo.name}}" input-align="right" label="姓名" placeholder="请输入您的姓名" bind:change="inputChange"></van-field>
+    <!-- <van-cell title="姓名" value="{{userInfo.name}}"></van-cell> -->
+    <picker bindcancel="closePop" value="{{departIndex}}" range="{{departmentList}}" bindchange="pickConfirm">
+      <van-cell title="部门" value="{{userInfo.department}}" isLink></van-cell>
+    </picker>
+
+  </van-cell-group>
+  <view class="m-t-30 center">
+    <van-button color="#0492CE" bind:click="goTo" round>确定</van-button>
+  </view>
+</view>

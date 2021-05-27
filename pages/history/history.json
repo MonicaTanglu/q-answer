@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "历史答题记录",
+  "navigationBarBackgroundColor": "#0492CE",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-loading": "@vant/weapp/loading/index"
+  }
+}

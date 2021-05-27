@@ -1,0 +1,14 @@
+<view class="index">
+  <view class="top-image">
+    <van-image width="100" height="100" src="/assets/images/icon/learning.png"></van-image>
+  </view>
+  <view style="margin-top:70px;padding-bottom:30px">
+    <view class="m-b-20" wx:for="{{exams}}" wx:for-index="index" wx:key="index" wx:for-item="exam">
+      <van-button block color="#0492CE" round bind:click="goExam" data-index="{{index}}">{{exam.name}}</van-button>
+    </view>
+    <view class="m-t-20">
+      <van-button block color="#0492CE" round bind:click="practice">每日练习</van-button>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="m-t-10">
+  <van-cell-group wx:if="{{type === 'common'}}">
+    <van-cell wx:for="{{list}}" wx:key="index" wx:for-index="index" wx:for-item="item" title="{{item.lxsj}}" isLink bind:click="goTo" data-url="/pages/answer/answer?id={{item.id}}&&type={{type}}" />
+  </van-cell-group>
+  <van-cell-group wx:if="{{type === 'exam'}}">
+    <van-cell wx:for="{{list}}" wx:key="index" wx:for-index="index" wx:for-item="item" title="{{item.jsname}}" isLink bind:click="goTo" data-url="/pages/answer/answer?id={{item.id}}&&type={{type}}" />
+  </van-cell-group>
+  <view wx:if="{{!loading && list.length === 0}}">
+    <van-empty description="无记录" />
+  </view>
+</view>
+<view class="center" wx:if="{{loading}}">
+  <van-loading type="spinner" />
+</view>
+<van-divider contentPosition="center" wx:if="{{bottomLineShow}}">到底了</van-divider>

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "答题中",
+  "navigationBarBackgroundColor": "#0492CE",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-popup": "@vant/weapp/popup/index"
+  }
+}

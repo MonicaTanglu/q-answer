@@ -1,0 +1,10 @@
+<!--pages/basic/basic.wxml-->
+<view>
+  <van-cell-group>
+    <van-cell title="姓名" value="{{userInfo.name}}"></van-cell>
+    <van-cell title="部门" value="{{userInfo.department}}"></van-cell>
+  </van-cell-group>
+  <view class="m-t-30 center">
+    <van-button plain color="#0492CE" bind:click="goTo" round>修改</van-button>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="m-t-10">
+    <van-cell-group>
+      <van-cell title="平时练习" isLink bind:click="goTo" data-url="/pages/history/history?type=common" />
+      <van-cell title="考试" isLink bind:click="goTo" data-url="/pages/history/history?type=exam" />
+    </van-cell-group>
+  </view>
