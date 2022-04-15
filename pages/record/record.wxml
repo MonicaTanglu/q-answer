@@ -30,7 +30,7 @@
           class="option-item {{common.highLight('C',questionList[currentIndex])}}">C.
           {{questionList[currentIndex].xxc}}</view>
         <view wx:if="{{questionList[currentIndex].xxd}}"
-          class="option-item {{common.highLight('D',questionList[currentIndex])}}">C.
+          class="option-item {{common.highLight('D',questionList[currentIndex])}}">D.
           {{questionList[currentIndex].xxd}}</view>
       </view>
       <view>正确答案：{{questionList[currentIndex].da}} 　您的回答：{{questionList[currentIndex].answer}}</view>

@@ -1,10 +1,8 @@
 {
   "pages":[
-    
     "pages/index/index",
     "pages/mine/mine",
     "pages/question/question",
-    
     "pages/answer/answer",
     "pages/record/record",
     "pages/basic/basic",

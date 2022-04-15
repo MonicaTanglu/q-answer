@@ -31,8 +31,8 @@
           class="option-item {{questionList[currentIndex].answer === 'C' ? 'active': ''}}" data-value="C">C.
           {{questionList[currentIndex].xxc}}</view>
         <view wx:if="{{questionList[currentIndex].xxd}}" bindtap="setAnswer"
-          class="option-item {{questionList[currentIndex].answer === 'D' ? 'active': ''}}" data-value="D">C.
-          {{questionList[currentIndex].XXD}}</view>
+          class="option-item {{questionList[currentIndex].answer === 'D' ? 'active': ''}}" data-value="D">D.
+          {{questionList[currentIndex].xxd}}</view>
       </view>
     </view>
   </view>
